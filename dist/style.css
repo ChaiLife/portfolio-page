@@ -1,0 +1,200 @@
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+}
+body {
+  background-color: black;
+  color: lightslategray;
+  font-family: 'Old Standard TT', serif;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background: transparent;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: transparent;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: black;
+  color: white;
+}
+
+h1{
+  font-size: 3em;
+  font-family: 'Lobster', cursive;
+}
+h2{
+  font-size: 2em;
+  color: white;
+  
+}
+p{
+  font-size: 2em;
+  font-family: 'Lobster', cursive;
+}
+#welcome-section{
+  color: black;
+  height: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("https://i.postimg.cc/W34qDnR4/white-office.jpg' border='0' alt='white-office");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/** projects **/
+
+#projects {
+  height: 950px; 
+  text-align: center;
+  word-wrap: break;
+ 
+}
+
+.project-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  margin-top: 170px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 20px  
+}
+
+/** about **/
+
+.about{
+  height: 650px;
+  padding-top: 200px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  background-image: url("https://i.postimg.cc/m2VPdR25/pt-alt-background.jpg' border='0' alt='pt-alt-background");
+   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about h3{
+  color: silver;
+  background: linear-gradient(to right, black, grey, black);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.me{
+  height: 55%;
+  width: 55%;
+  border-radius: 50%;
+  margin-left: ;
+  margin-bottom: 200px;
+}
+
+
+/** contact**/
+
+.contact{
+  height: 650px;
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 200px;
+  background-image: url("https://i.postimg.cc/MGQSSz75/contact.jpg' border='0' alt='contact");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button{
+ background: black;
+ height: 2em;
+ width: 10em;
+ margin: 30px;
+ display: flexrow;
+ justify-content: space-between;
+ font-size: 1em;
+  color: white;
+  border-radius: 10px;
+}
+.button:hover {
+  color: black;
+  background: silver;
+}
+
+/** footer **/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: silver;
+  text-align: center;
+  font-size: .5em;
+  font-family: 'Old Standard TT', serif;
+}
+
+.footer p{
+  font-family: 'Old Standard TT', serif;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px){
+  .row {
+    flex-direction: column;
+   }
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media screen and (max-width: 600px) {
+  .about {
+    display: none;
+  }
+}

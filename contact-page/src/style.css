@@ -1,0 +1,16 @@
+html, body{
+  background: linear-gradient(180deg, white, grey, black);
+  background-size: auto;
+  
+}
+main{
+  background-color: white;
+  font-family: 'Old Standard TT', serif;
+  margin-top: 30px;
+}
+
+
+
+.form-group {
+  max-width: 1200px;
+}

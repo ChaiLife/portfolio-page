@@ -1,0 +1,61 @@
+<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+
+
+<main class="container ">
+  <h1 id="title">Tell Me About You</h1>
+  <p id="description">
+    This short form will help me identify your needs
+  </p>
+  <form action="#" id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+
+      <label for="business-name" id="business-name-label"> Business Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Business name" required>
+
+      <label for="email" id="email-label">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Email" required>
+
+      <label for="number" id="number-label"> Business Age</label>
+      <input type="number" max="150" min="1" id="number" placeholder="Business age" class="form-control" required>
+
+      <label for="dropdown" id="dropdown-label">Number of Pages Needed</label>
+      <select class="custom-selcect" id="dropdown" name="site-size">Number of pages for site
+    <option value>Select an option</option>
+    <option value="small-site">1-5 Pages </options>
+    <option value="med-site">6-10 Pages </option>
+    <option value="large-site">11+ Pages </option> 
+    </select>
+    </div>
+    <legend>Services </legend>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="design" name="services" value="design"><label class="form-check-label" for="design">Design</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="fix" name="services" value="fix">
+      <label class="form-check-label" for="fix"> Fix Code</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="build" name="services" value="build" checked><label class="form-check-label" for="build">Build Site</label>
+    </div>
+    <legend> Do you currently have a functioning website?</legend>
+  <div class="form-check ">
+     <input class="form-check-input" type="radio" id="yes" name="Question" value="yes">
+    <label class="form-check-label" for="yes"><label for="yes">Yes</label>
+      </div>
+    <div class="form-check form-check-inline">
+     <input class="form-check-input" type="radio" id="no" name="Question" value="no" checked>
+      <label class="form-check-label" for="no">No</label>
+      </div>
+   <div class="form-group">
+    <label for="comments"> What would you like your site to accomplish?</label>
+    <textarea class="form-control"  name="comments" id="comments" placeholder="The sky's the limit!" rows="3"></textarea>
+   
+     </div>
+    <label for="submit">
+  <button  type="submit" id="submit">Submit Request</button>
+  
+  </label>
+  </form>
+</main>
